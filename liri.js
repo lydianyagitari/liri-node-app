@@ -1,5 +1,5 @@
 // require everything need to run this CLA
-js
+
 require("dotenv").config();
 
 
