@@ -101,12 +101,12 @@ Getting Started
 
 Tech used
 Node.js
-Twitter NPM Package - npmjs.com/package/twitter
 Spotify NPM Package - npmjs.com/package/spotify
 Request NPM Package - npmjs.com/package/request
 Prerequisites
 
-Node.js - Download the latest version of Node https://nodejs.org/en/ Built With Sublime Text -
-Text Editor Authors Lydia Nyagitari - Node JS - Lydia Nyagitari
+Node.js - Download the latest version of Node https://nodejs.org/en/ 
+Built With VS Text Editor -
+Authors Lydia Nyagitari  - Lydia Nyagitari
 
 
