@@ -101,13 +101,18 @@ Getting Started
 
 *Tech used
 Node.js
-Twitter NPM Package - npmjs.com/package/twitter
 Spotify NPM Package - npmjs.com/package/spotify
 Request NPM Package - npmjs.com/package/request
 Prerequisites
 
+<<<<<<< HEAD
 *Node.js - Download the latest version of Node https://nodejs.org/en/ 
 *Text Editor Visual Studio 
 *Authors Lydia Nyagitari
+=======
+Node.js - Download the latest version of Node https://nodejs.org/en/ 
+Built With VS Text Editor -
+Authors Lydia Nyagitari  - Lydia Nyagitari
+>>>>>>> 4cb73d16cd05842116c410a1a4515183ce51b9c1
 
 
