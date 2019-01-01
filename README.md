@@ -98,8 +98,8 @@ Getting Started
    * Using the `fs` Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
 
      * It should run `spotify-this-song` for "I Want it That Way," as follows the text in `random.txt`.
-![Image of Yaktocat](https://octodex.github.com/images/liri1.png)
-![Image of Yaktocat](https://octodex.github.com/images/liri1.png)
+![Image of Lir CLI](https://github.com/lydianyagitari/liri-node-app/tree/master/images/liri1.png)
+![Image of Liri CLI2](https://github.com/lydianyagitari/liri-node-app/tree/master/images/liri2.png)
 * Tech used
 Node.js
 Spotify NPM Package - npmjs.com/package/spotify
