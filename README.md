@@ -1,8 +1,11 @@
 #Overview
-LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data. Getting Started • Clone down repo. • Run command 'npm install' in Terminal or GitBash • Run command 'node liri.js' or one of the commands below.
 
-LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies.
-Overview
+LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data. Getting Started
+• Clone down repo. 
+• Run command 'npm install' in Terminal or GitBash 
+• Run command 'node liri.js' or one of the commands below.
+
+LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies
 
 
 # LIRI Bot
@@ -98,6 +101,7 @@ Getting Started
    * Using the `fs` Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
 
      * It should run `spotify-this-song` for "I Want it That Way," as follows the text in `random.txt`.
+     
 ![Image of Lir CLI](https://github.com/lydianyagitari/liri-node-app/tree/master/images/liri1.PNG)
 ![Image of Liri CLI2](https://github.com/lydianyagitari/liri-node-app/tree/master/images/liri2.PNG)
 * Tech used
