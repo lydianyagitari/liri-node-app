@@ -7,7 +7,6 @@ var request = require('request');
 var moment = require('moment');
 var Spotify = require('node-spotify-api');
 var fs = require("fs");
-
 // node arg variables, spotify keys and search variables
 var spotify = new Spotify(keys.spotify);
 var nodeAppArgs = process.argv;
@@ -33,7 +32,7 @@ switch (liriApp) {
         if (search) {
             //state that Liri is looking for concerts for the artist
             console.log("\nThese are the concerts for you " + search)
-                // call the findConcert function
+            // call the findConcert function
             findConcert(search);
         }
         break;
@@ -42,7 +41,7 @@ switch (liriApp) {
         if (search) {
             // state that Liri is spotifying the song
             console.log("\nSpotifying " + search)
-                // call the spotifySong function
+            // call the spotifySong function
             spotifySong(search);
             // else if Liri never found a song, just search all the small things
         } else {
@@ -55,7 +54,7 @@ switch (liriApp) {
         if (search) {
             // state that IMDB is running a search
             console.log("\nchecking IMDB for " + search + ".")
-                // call the findMovie function
+            // call the findMovie function
             findMovie(search);
         } else {
             var search = "Mr. Nobody"
@@ -77,11 +76,10 @@ switch (liriApp) {
 // function to find a concert
 function findConcert(search) {
     var queryUrl = "https://rest.bandsintown.com/artists/" + search + "/events?app_id=codingbootcamp";
-    request(queryUrl, function(error, response, body) {
+    request(queryUrl, function (error, response, body) {
 
         //  if no error and statusCode is 200
         if (!error && response.statusCode === 200) {
-
             // loop through the body
             for (i = 0; i < body.length; i++) {
 
@@ -106,7 +104,7 @@ function spotifySong(search) {
     spotify.search({
         type: 'track',
         query: search
-    }, function(error, data) {
+    }, function (error, data) {
         // if there is an error, console.log the error
         if (error) {
             return console.log('There was an Error! ' + err);
@@ -131,7 +129,7 @@ function spotifySong(search) {
 function findMovie(search) {
     var queryUrl = "http://www.omdbapi.com/?t=" + search + "&y=&plot=short&apikey=trilogy";
 
-    request(queryUrl, function(error, response, body) {
+    request(queryUrl, function (error, response, body) {
 
         // If response status code is 200, means its successful,..then return movie info/data
         if (!error && response.statusCode === 200) {
@@ -160,7 +158,7 @@ function findMovie(search) {
 }
 //this function will do "i like it that way"
 function doAsAppWants() {
-    fs.readFile("random.txt", "utf8", function(error, data) {
+    fs.readFile("random.txt", "utf8", function (error, data) {
         // an error is thrown if fs cannot be read.
         if (error) {
             return console.log(error);
